@@ -1,0 +1,14 @@
+form { display: block; margin: 20px auto; background: #272424; border-radius: 10px; padding: 15px;color: darkcyan; }
+#progress { position:relative; width:400px; border: 1px solid #ddd; padding: 1px; border-radius: 3px; }
+#bar { background-color: #00CED1; width:0%; height:20px; border-radius: 3px; }
+#percent { position:absolute; display:inline-block; top:3px; left:48%; }
+#content{ background: #272424; width: 650px;height: 220px; margin-left: 20%;}
+h1{ color: white; }
+body{background: black; }
+#submit {
+	border: none;
+	padding: 10px;
+	background: #61BAE4;
+	border-radius: 5px;
+	color: #FFF;
+}

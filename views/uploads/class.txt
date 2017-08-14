@@ -1,0 +1,14 @@
+<html>
+<head>
+<title> add class</title>
+</head>
+<body>
+<form name= "add class" action="add class.php" method="post">
+<label> class_name</label>
+<input type= "text" name="name">
+</br>
+<input type= "submit" >
+
+</form>
+</body>
+</html>

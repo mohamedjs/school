@@ -1,0 +1,870 @@
+\documentclass{article}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\title{Soft ware project}
+\begin{document}
+	\maketitle
+	\graphicspath{picture/}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[height=112mm]{homepage.png}
+	\caption{homepage}
+\end{figure}
+    
+    \begin{table}[!h]
+    	\centering
+    	\caption{TEAM WORK}
+    	\begin{tabular}{|l|c|}
+    		\hline
+    		Mahmoud Awad Rashad Salama&20140387\\
+    		\hline
+    		Mohamed Gamal Ibrahim Mohamed &20140314\\
+    		\hline
+    		Mohamed Mahmoud Hamed abdel maqsoud &20140355\\
+    		\hline
+    		Hader Ahmed Mahmoud Mohamed &20140475\\
+    		\hline
+         	Hend hesham elsayed&20140481\\
+    		\hline
+    		Menna Allah Medhat Sharif &20140429\\
+    		\hline
+    		yahia abdullah abdelhafize & 20140497\\
+    		\hline
+    	\end{tabular}
+    \end{table}
+    \section{Scope of Work}
+    the scope of our system is very vast. It includes everything regarding the efficient functioning of the educational institution,
+    It interprets the functions and the activities of an educational programme in fruitful relationships and harmonizes their mutual action.
+    
+    \subsection{our system will cover all areas related to educational institution.}
+    
+    1-Registration of students.\\
+    2-Access timetable,grades and transcript.\\
+    3-fees management.\\
+    4-Communication Module.\\
+    5-Student Information Management.\\
+    6-Information about school \\
+    
+    \section{Non Function Requirements}
+    1-security\\
+    -All software data must be backed up.\\
+    - The system ensures ?Unauthorised access to the system and its data is not    allowed.\\\\
+    
+    2- Safety\\
+    -The system should stop if any external hackers.\\
+    -The system shoulden't longer operate if the password entered incorrectly      more than three times.\\\\
+    
+    3-Performance\\
+    -The software have a quick responses to a user input.\\
+    \\\\
+    4- Usability\\
+    -The software have error messages for users\\
+    \\\\
+    5-Reliability\\
+    -The ability of the system to perform its required functions under stated conditions for a specific period of tim.\\
+    -The software is available for any service when requested by users.
+    \\\\
+	\section{Use Case Specification}
+	
+	%table 1 Login 
+	\begin{table}[!h]
+		
+		\caption{login use case }
+		\centering
+		\label{loginfunction}
+		
+		\begin{tabular}{|c|l|}
+			\hline
+			Name                 & Login \\
+			\hline
+			Actor                & Student - Teacher - Parent - Manager - admin  \\
+			\hline
+			Pre Condition        & the user must have an account \\
+			\hline
+			&  1 - open home page \\
+			Basic flow           & 2-enter e-mail and PassWord \\
+			& 3 - Click on Login button\\
+			\hline
+			
+			Alternative Flow    & if the User Name or Password is incorrect :-\\
+			& - the User is allowed to Re-Enter his Data again . \\
+			\hline
+			
+			Post Condition      & User now can access his Page . \\
+			
+			\hline
+			
+		\end{tabular}
+		
+	\end{table}
+	
+	\subsection{Admin tebles}
+	
+	
+	%table 2 Add Student
+	\begin{table}[!h]
+		
+		\caption{Add Student use case }
+		\centering
+		\label{Addfunction}
+		
+		\begin{tabular}{|c|l|}
+			\hline
+			Name                 & Add Student \\
+			\hline
+			Actor                & Admin  \\
+			\hline
+			Pre Condition        & Admin is logged successfully \\
+			\hline
+			                     & 1 - Click on add Student Link   \\
+			Basic flow           & 2 - enter Data of Student (Name , Age , Level , e-mail ,\ldots , etc) \\
+			                     & 3 - Click on Add button\\
+			\hline
+			
+			Alternative Flow    & if e-mail is exists in DataBase message will appear  :-\\
+			                    & - ``this mail is already exists enter another mail `` . \\
+			\hline
+			
+			Post Condition      & Student is Added in DataBase of the System . \\
+			
+			\hline
+			
+		\end{tabular}
+		
+	\end{table}
+
+	%table 3 Add teacher  
+	\begin{table}[!h]
+		
+		\caption{Add Teacher  use case }
+		\centering
+		\label{AddTeacherfunction}
+		
+		\begin{tabular}{|c|l|}
+			\hline
+			Name                 & Add Teacher \\
+			\hline
+			Actor                & Admin  \\
+			\hline
+			Pre Condition        & the Teacher must have an account \\
+			\hline
+			                &  1 - Click on Add teacher Link \\
+			Basic flow      &  2-enter Teacher Data (Name , Mail , age , address , \ldots , etc) \\
+			                & 3 - Click on Add button\\
+			\hline
+			
+			Alternative Flow    & if e-mail exists in database,message will appear :-\\
+		                    	& - ``this mail is already exists enter another mail`` . \\
+			\hline
+			
+			Post Condition      & teacher is added in database of the system. \\
+			
+			\hline
+			
+		\end{tabular}
+		
+	\end{table}
+	
+	%table 4 update student 
+	\begin{table}[!h]
+		
+		\caption{update student use case }
+		\centering
+		\label{updateStudentfunction}
+		
+		\begin{tabular}{|c|l|}
+		
+			\hline
+			Name                 & update student \\
+			\hline
+			Actor                & admin   \\
+			\hline
+			Pre Condition        & admin is logged \\
+			\hline
+			                     &  1 - search for the id of this student. \\
+			Basic flow           &  2 - click on update button. \\
+		                         &  3 - update the data.\\
+		                         &  4 - click on save button.\\
+			\hline
+			
+			Alternative Flow    & if the id of student wasn't correct view  :-\\
+			                    & - " the error message" and the admin can  re-enter id of the student. \\
+			\hline
+			
+			Post Condition      &  data of the student was updated\\
+			
+			\hline
+			
+		\end{tabular}
+		
+	\end{table}
+	
+	%table 5 update teacher 
+	\begin{table}[!h]
+		
+		\caption{update teacher use case }
+		\centering
+		\label{updateteacherfunction}
+		
+		\begin{tabular}{|c|l|}
+			\hline
+			Name                 & update teacher \\
+			\hline
+			Actor                & Admin  \\
+			\hline
+			Pre Condition        & admin is logged successfully \\
+			                     & teacher had an account.\\
+			
+			\hline
+		
+			               & 1 - search for id of this teacher \\
+			Basic flow     & 2 - click on update button \\
+			               & 3 - update the data\\
+			               & 4 - click on save button.\\
+			\hline
+			 
+			
+			Alternative Flow & 1-if the id of teacher wasn't correct view " the error message"\\
+		                     & 2- the admin can  re-enter id of the teacher. \\
+			\hline
+			
+			Post Condition      & data of the teacher was updated . \\
+			
+			\hline
+			
+		\end{tabular}
+		
+	\end{table}
+	
+	%table 6 search for id
+	\begin{table}[!h]
+		\caption{search for id}
+		\centering
+		\label{search for id}
+		\begin{tabular}{|c|l|}
+			\hline
+			Name             & search for id\\
+			\hline
+			Actor            &Admin\\
+			\hline
+			Pre Conditon     &1- admin is logged\\
+			                 &2- id had been exist\\
+			\hline
+			                 
+			Basics Flow      &1-enter id in search box\\
+			                 &2-click on seacrh button\\
+			\hline
+			Alternative Flow &1-if the id of  wasn't correct view " the error message" \\
+			               & 2-the admin can  re-enter id.
+			\\
+			\hline
+			Post Condition   &1-the data of that id  will appear \\
+			                 &2-the admin now can do the functions which he had a permission to do.\\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	%table 7 delete student
+	\begin{table}[!h]
+		\caption{delete student}
+		\centering
+		\label{delete student}
+		\begin{tabular}{|c|l|}
+			\hline
+			Name             &delete student\\
+			\hline
+			Actor            &Admin\\
+			\hline
+			Pre Conditon     &1-admin is logged\\
+			                 &2-student had been added \\
+			\hline
+			
+			Basics Flow      &1-search for the id of the student.\\ 
+			                 &2-click on delete button.\\
+			
+			\hline
+			Alternative Flow & 1-if the id of student wasn't correct     view " the error message" \\
+			                 & 2-the admin can  re-enter id of the student.
+			\\
+			\hline
+			Post Condition   &Wait approval of the manager on this deletion.\\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	%table 8 delete teacher
+	\begin{table}[!h]
+		\caption{delete teacher}
+		\centering
+		\label{delete teacher}
+		\begin{tabular}{|c|l|}
+			\hline
+			Name             &delete teacher\\
+			\hline
+			Actor            &Admin\\
+			\hline
+			Pre Conditon     &1-admin is logged\\
+			                 &2-teacher had been added \\
+			\hline
+			
+			Basics Flow      &1-search for the id of the teacher.\\ 
+			                 &2-click on delete button. \\
+			
+			\hline
+			Alternative Flow &if the id of teacher wasn't correct view " the error message" \\
+			                 & the admin can  re-enter id of the teacher.
+			\\
+			\hline
+			Post Condition   &Wait approval of the manager on this deletion.\\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	%table 9 add activity 
+	\begin{table}[!h]
+		\caption{add activity}
+		\centering
+		\label{dadd activity}
+		\begin{tabular}{|c|l|}
+			\hline
+			Name             &add activity\\
+			\hline
+			Actor            &admin\\
+			\hline
+			Pre Conditon     &admin is logged\\
+			\hline
+			                 &1-click on add activity.\\
+			Basics Flow      &2-enter the data about this activity.\\
+			                 &3-click on save.\\
+			\hline
+			Alternative Flow &n/a\\
+			\hline
+			Post Condition   &activities had been appeared to users.\\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	%table 10 upload timetable 
+	\begin{table}[!h]
+		\caption{upload timetable}
+		\centering
+		\label{upload timetable}
+		\begin{tabular}{|c|l|}
+			\hline
+			Name             &upload timetable\\
+			\hline
+			Actor            &Admin \\
+			\hline
+			Pre Conditon     &admin is logged \\
+			\hline
+			
+			Basics Flow      &1-click on upload timetable button.\\
+			&2-choose the file you want to upload.\\
+			
+			\hline
+			                 &1-the internet disconnected during uploading.\\
+			Alternative Flow &2-if admin click on upload button without choosing file,view error message.\\
+			                 &3-if the admin choose wrong file to upload.\\
+			\hline
+			Post Condition   &1-timetable is uploaded \\& 2-the user can download it to show\\
+			\hline
+		\end{tabular}
+	\end{table}	
+	
+	
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+    %%%%%% student tables  %%%%%%%%%%%%%%%%%
+    
+    %table 1 solve quize
+    \begin{table}[!h]
+    	\centering
+    	\caption{solve quize}
+    	\label{solve quize}
+    	
+    	\begin{tabular}{|c|l|}
+    		\hline
+    		Name & Solve Quize \\
+    		\hline
+    		Actor & Student \\ 
+    		\hline
+    		              &1-student is logged successfully.\\
+    		pre Condition &2-quize was uploaded.\\
+         		          &3-deadline wasn't terminated.\\
+         \hline
+                           &1-click on solve quiz button\\  
+                           &2- select subject\\
+       Basics Flow   &3-click on the link of quiz you want to solve \\
+                           &4-choose the answer of each question\\
+                           &5-click on submit button\\
+         \hline 
+          alternative flow & 1-if student click on submit button\\& without choosing at least one answer view "error message" .\\
+          \hline
+                
+          post condition & 1-the grades is calculated and saved in database of the system .\\
+          \hline
+                        
+    		
+    	\end{tabular}
+    	
+    \end{table}
+    
+    \begin{table}[!h]
+    	\centering
+    	\caption{view Student timetable}
+    	\label{view student timetable}
+    	\begin{tabular}{|c|l|}
+    		\hline
+    		Name & view Student timetable\\
+    		\hline
+    		Actor& Student \\
+    		\hline
+    		preconditon & 1-studnet is logged successfully.\\
+    		            & 2-timetable was uploaded.\\
+          \hline
+    	   basic flow & -click on view timetable button .\\
+    	   \hline
+    	   
+    	   alternative flow & -the internet is disconnected during downloading timetable.\\
+    	   \hline
+    	   
+    	   postcondition & the timetable of the student was downloaded on (pc,mobile,laptop,\ldots).\\
+    	   \hline
+    	        
+     	\end{tabular}
+    \end{table}
+    
+    \begin{table}[!h]
+    	\centering
+    	\label{Recerv Activity}
+    	\caption{Reserve Activity}
+    	\begin{tabular}{|c|l|}
+    		\hline
+    		Name & reserve activity\\
+    		\hline
+    		actor & student \\
+    		\hline 
+    		precondition & 1-student is logged successfully.\\
+    		             & 2-an activity is created\\
+           \hline
+           	
+    		           & 1-click on reserve activity button .\\
+    		basic flow & 2-fill the form of the activity you want.\\
+    		           & 3-click on submit button.\\
+    		\hline
+    		alternative flow & - the internet is disconnected during submitting data.\\
+    		\hline
+    		postcondition & Student participated in this activity.\\
+    		\hline
+    	\end{tabular}
+    \end{table}
+    
+    \begin{table}[!h]
+    	\centering
+    	\caption{View Grade}
+    	\label{Viwe Grade}
+    	\begin{tabular}{|c|l|}
+    		\hline
+    		name & view grade\\
+    		\hline
+    		actor & student \\
+    		\hline
+    		precondition & 1-student is logged successfully.\\
+    		             & 2-grades had been stored in database.\\
+    		\hline
+    		basic flow & 1-click on view grade button.\\
+    		           & 2-choose the subject you want to see its grades.\\
+    		           \hline
+    		postcondition & the grades of student will be shown .\\
+    		\hline
+    	\end{tabular}
+    \end{table}
+    
+    \begin{table}[!h]
+    	\centering
+    	\label{View Transcript}
+    	\caption{View Transcript}
+    	\begin{tabular}{|c|l|}
+    		\hline
+    		name & view transcript\\
+    		\hline
+    		actor & student\\
+    		\hline
+    		precondition & 1-student is logged successfully\\
+    		& 2-manager agreed on appearing the result of school.\\
+    		\hline
+    		basic flow & -click on view transcript button.\\
+    		\hline
+    		postcondition & -transcript of the student was shown.\\
+    		\hline
+    	\end{tabular}
+    \end{table}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%% Manager Functions %%%%%%%%%%%%%%%%
+     \begin{table}
+     	\centering
+     	\label{view financial teacher report}
+     	\caption{view financial teacher report}
+     	\begin{tabular}{|c|l|}
+     		\hline
+     		Name & view financial teacher report\\
+     		\hline
+     		actor & manager\\
+     		\hline
+     		precondition & 1-manager is logged successfully\\
+     		             & 2-data had been uploaded\\
+     		\hline
+     		basic flow & -click on view financial teacher report button.\\
+     		\hline
+     		postcondition & -financial teacher report is shown for the manager.\\
+     		\hline
+     	\end{tabular}
+     	
+     \end{table}
+     
+     \begin{table}
+     	\centering
+     	\caption{Viwe Financial Student Report}
+     	\label{Viwe Financial Student Report}
+     	\begin{tabular}{|c|l|}
+     		\hline
+     		Name & view financial students report\\
+     		\hline
+     		actor & manager\\
+     		\hline
+     		precondition & 1-manager is logged successfully\\
+     		& 2-Fee Data had been uploaded \\
+     		\hline
+     		basic flow & -click on view financial students report button.\\
+     		\hline
+     		postcondition & -financial students report is shown for the manager.\\
+     		\hline
+     	\end{tabular}
+     \end{table} 	   
+     \begin{table}
+     	\centering
+     	\caption{view resources report}
+     	\label{view resources report}
+     	\begin{tabular}{|c|l|}
+     		\hline
+     		name & view resources report\\
+     		\hline
+     		actor & manager \\
+     		\hline
+     		precondition & 1-manager is logged successfully\\
+     		& 2- Data had been uploaded \\
+     		\hline
+     		
+     		basic flow & -click on view resources report button.\\
+     		\hline
+     		
+     		postcondition & - resources report is shown for the manager.\\
+     		\hline
+     	\end{tabular}
+     \end{table}
+     
+     \begin{table}
+     	\centering
+     	\label{approve deletion}
+     	\caption{approve deletion}
+     	\begin{tabular}{|c|l|}
+     	      \hline
+     	      Name & approve deletion
+     	      \\\hline
+     	      actor & manager\\
+     	      \hline
+     	      precondition & 1-manager is logged successfully\\
+     	                   & 2- there are processes which waiting confirmation from manager.\\
+     	      
+     	      \hline
+     	                  & 1-click on approve deletion button.\\
+     	      basic flow  & 2-approve the deletion if you want this.\\
+     	                  & 3-click on ok button.  \\
+     	      \hline
+     	      
+     	      postcondition & - this item or user is deleted.\\
+     	      \hline
+     	\end{tabular}
+     \end{table}
+     
+     \begin{table}
+     	\centering
+     	\label{approve transcript}
+     	\caption{approve transcript}
+     	\begin{tabular}{|c|l|}
+     		\hline
+     		name & approve transcript\\
+     		\hline
+     		actor & manager\\
+     		\hline
+     		precondition & 1-manager is logged successfully\\
+     		             &2- the result of school exists and wainting confirmation from manager to appear.\\
+     		\hline
+     		
+     		basic flow & -click on approve transcript button.\\
+     		\hline
+     		
+     		postcondition & - transcript had been appeared to students of the school.\\
+     		\hline
+     	\end{tabular}
+     \end{table}
+     
+     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     %%%%%%%%%%%%%%Teacher tables%%%%%%%%%%%%%%%%%%%%
+    \begin{table}
+    	\centering
+    	\caption{upload grades}
+    	\label{upload grades}
+    	\begin{tabular}{|c|l|}
+    		\hline
+    		name & upload grades\\
+    		\hline
+    		actor & teacher\\
+    		\hline
+    		precondition & teacher is logged successfully.\\
+    		\hline
+    		           &1-open the student list.\\
+    		basic flow & 2-assign grade of each student.\\
+    		           &3-click submit.\\
+    		\hline
+    		alternative flow & the internet is disconnected during setting grades.\\
+    		\hline
+    		postcondition & grades are uploaded.\\
+    		\hline
+    	\end{tabular}
+    \end{table}
+    
+    \begin{table}
+    	\centering
+    	\label{set Quiz}
+    	\caption{set Quiz}
+    	\begin{tabular}{|c|l|}
+    		\hline
+    		name & set quiz\\
+    		\hline
+    		actor & teacher\\ 
+    		\hline
+    		precondition & teacher is logged successfully.\\
+    		\hline
+		    		& 1-open set quiz form.\\
+		basic flow  &2-enter the questions(mcq) and their answer.\\
+		    		&3-determine the correct answer.\\
+			    		&4-click on submit.\\
+			    		\hline
+    		alternative flow &the internet is disconnected during setting quiz.\\
+    		\hline
+    		postcondition & quiz is uploaded and is shown for students.\\
+    		\hline
+    	\end{tabular}
+    \end{table}
+    
+    \begin{table}
+    	\centering
+    	\label{upload assignment }
+    	\caption{upload assignment }
+    	\begin{tabular}{|c|l|}
+    		\hline
+    		name & upload assignment\\ 
+    		\hline
+    		actor & teacher\\
+    		\hline
+    		precondition & teacher is logged successfully\\
+    		\hline
+    		basic flow & 1-click on upload assignment button .\\
+    		&2-choose the file you want to upload.\\
+    		\hline
+    	     & 1-the internet is disconnected during uploading.\\
+    		alternative flow	& 2-if teacher click on upload button without choosing file,view "error message".\\
+    		&3-if the teacher choose wrong file to upload.\\
+    		\hline
+    		postcondition & if the process completed successfully,assignment is uploaded and students\\& can download it to show .\\
+    		\hline
+    	\end{tabular}
+    \end{table}   
+    
+    \begin{table}[!h]
+    	\centering
+    	\label{send e-mail}
+    	\caption{send e-mail}
+    	\begin{tabular}{|c|l|}
+    		\hline
+	    	name & send e-mail\\
+	    	\hline
+	    	actor & teacher\\ 
+	    	\hline
+	    	precondition & teacher is logged successfully.\\
+	    	\hline
+	    	&1-open send e-mail page.\\
+	    	basic flow & 2-enter e-mail of parent you want to send message.\\
+	    	&3-enter message you want to send.\\
+	    	&4-click on send button.\\
+	    	\hline
+	    	alternative flow &  1- the internet is disconnected during writting mail\\
+	    	&2-The teacher enter wrong e-mail and because of that the message does't\\& arrive to the parent.\\
+	    	\hline
+	    	postcondition & message is send to the parent.\\
+	    	\hline
+    	\end{tabular}
+    \end{table} 
+    
+    \begin{table}
+    	\centering
+    	\label{view teacher timetable}
+    	\caption{view teacher timetable}
+    	\begin{tabular}{|c|l|}
+    		\hline
+    		name & view teacher timetable\\
+    		\hline
+    		actor & teacher \\
+    		\hline
+    		precondition & 1-teacher is logged successfully.\\
+    		&2-timetable was uploaded.\\
+    		\hline
+    		
+    		basic flow & -click on view timetable button .\\
+    		\hline
+    		alternative flow & -the internet is disconnected during downloading timetable.\\
+    		\hline
+    		postcondition & the timetable of the teacher was downloaded on (pc,mobile,laptop,\ldots).\\
+    		\hline
+    	\end{tabular}
+    \end{table}
+    
+    \begin{table}
+    	\centering
+    	\label{update grades}
+    	\caption{update grades}
+    	\begin{tabular}{|c|l|}
+    		\hline
+    		name & update grades\\
+    		\hline
+    		actor & teacher\\
+    		\hline
+    		precondition & 1-teacher is logged successfully.\\
+    		&2-grades had been uploaded on system.\\
+    		\hline
+    		& 1-click on set grades button.\\
+    		basic flow &2-click on edit grades button.\\
+    		&3-choose the student you want to update his grades.\\
+    		&4-click on save button. \\
+    		\hline
+    		alternative flow & -during updating grades for specific student,  maybe happen\\ &a confilict among another student gardes.so system show confirmation\\& message after clicking save.\\
+    		\hline
+    		postcondition & -the grades were updated.\\
+    		\hline    
+    	\end{tabular}
+    \end{table}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%% parent table %%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{table}
+    	\centering
+    	\label{view e-mail}
+    	\caption{view e-mail}
+    	\begin{tabular}{|c|l|}
+    		\hline
+    		name & view e-mail\\
+    		\hline
+    		actor & parent\\
+    		\hline
+    		precondition & 1-parent is logged successfully.\\
+    		&2- mail had been sent.\\
+    		\hline
+    		basic flow & -click on view e-mail button.\\
+    		\hline
+    		postcondition & -the parent saw the e-mail of the teacher.\\    
+    		\hline
+    	\end{tabular}
+    \end{table}
+    
+    	\section{Block Diagram }
+    		\begin{figure}[!h]
+    			\centering
+    			\includegraphics[width=1\textwidth]{20160329_182243.jpg}
+    			\caption{class diagram.}
+    		\end{figure}
+    	\begin{figure}[!h]
+    		\centering
+    		\includegraphics[width=1\textwidth]{BlockDiagram.jpg}
+    		\caption{Block Diagram .}
+    	\end{figure}
+    	%\section{ER moudel}
+    	\begin{figure}[!h]
+    		\centering
+    		\includegraphics[height=125mm]{ERmodul.jpg}
+    		\caption{ER modul .}
+    	\end{figure}
+    	\begin{figure}[!h]
+    		\centering
+    		\includegraphics[width=170mm]{usecase.png}
+    		\caption{use case .}
+    	\end{figure}
+    	\begin{figure}[!h]
+    		\centering
+    		\includegraphics[width=1\textwidth]{add.jpg}
+    		\caption{ add .}
+    	\end{figure}
+   		\begin{figure}[!h]
+   			\centering
+   			\includegraphics[width=115mm]{approve.jpg}
+   			\caption{ approve .}
+   		\end{figure}
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[width=115mm]{delete.jpg}
+			\caption{ delete .}
+		\end{figure}
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[width=115mm]{send email.jpg}
+			\caption{ send email .}
+		\end{figure}
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[width=110mm]{login.jpg}
+			\caption{ login .}
+		\end{figure}
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[width=110mm]{search for id.jpg}
+			\caption{ search for id}
+		\end{figure}
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[width=110mm]{reserve acrivity.jpg}
+			\caption{ reserve acrivity}
+		\end{figure}
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[width=100mm]{set grade.jpg}
+			\caption{ set grade}
+		\end{figure}
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[width=110mm]{set quiz.jpg}
+			\caption{ set quiz}
+		\end{figure}
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[width=110mm]{update.jpg}
+			\caption{update}
+		\end{figure}
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[width=110mm]{upload.jpg}
+			\caption{upload}
+		\end{figure}
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[width=115mm]{view.jpg}
+			\caption{view}
+		\end{figure}
+		
+		
+	
+		
+   					
+\end{document}
